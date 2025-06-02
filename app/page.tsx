@@ -6,7 +6,7 @@ import QuoteSection from "@/components/quote-section"
 import ContactInfo from "@/components/contact-info"
 import AnimatedSection from "@/components/animated-section"
 import LazyImage from "@/components/lazy-image"
-import shaded from "../assets/shaded.png"
+import shaded from "@/assets/Shaded.png"
 import Image from "next/image"
 
 export default function Home() {
