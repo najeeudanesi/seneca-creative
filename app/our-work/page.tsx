@@ -11,7 +11,7 @@ export default function OurWork() {
       <HeroSection
         title="Our Work"
         subtitle="Have a peek at some of our work"
-        backgroundImage="/placeholder.svg?height=600&width=1200"
+        backgroundImage="https://i.ibb.co/F4rWHwMg/image-3.png"
         primaryButtonText="Contact Us"
         primaryButtonLink="/contact-us"
         secondaryButtonText="Pricing"

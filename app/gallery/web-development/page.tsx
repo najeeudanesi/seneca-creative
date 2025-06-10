@@ -1,46 +1,75 @@
-import Image from "next/image"
 import HeroSection from "@/components/hero-section"
+import GallerySlideshow from "@/components/gallery-slideshow"
+import ProjectShowcase from "@/components/project-showcase"
+import AnimatedSection from "@/components/animated-section"
+
+const galleryImages = [
+  { src: "/placeholder.svg?height=600&width=1000", alt: "E-commerce Platform - Modern online shopping experience" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Corporate Dashboard - Business intelligence interface" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Mobile App Interface - Responsive design showcase" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "SaaS Platform - Cloud-based application interface" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Portfolio Website - Creative showcase platform" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Blog Platform - Content management system" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Landing Page - Conversion-optimized design" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Web Application - Full-stack development" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Admin Panel - Backend management interface" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Progressive Web App - Modern web technology" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Component Library - Reusable UI elements" },
+  { src: "/placeholder.svg?height=600&width=1000", alt: "Design System - Comprehensive style guide" },
+]
 
 export default function WebDevelopmentGallery() {
   return (
     <>
-      <HeroSection
-        title="Gallery/Web Development"
-        subtitle="Have a peek at some of our work"
-        backgroundImage="/placeholder.svg?height=600&width=1200"
+  
+
+      <GallerySlideshow images={galleryImages} autoPlayInterval={5000} />
+
+      <AnimatedSection animation="fade-up" className="py-8">
+        <div className="container-custom">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-2 gradient-text">Gallery/WEB DEVELOPMENT</h1>
+        </div>
+      </AnimatedSection>
+
+      <ProjectShowcase
+        title="E-COMMERCE PLATFORM"
+        description="A comprehensive e-commerce solution built with modern web technologies. This platform features a responsive design that adapts seamlessly across all devices, ensuring optimal user experience whether customers are shopping on desktop, tablet, or mobile. The intuitive interface guides users through their shopping journey with clear navigation, detailed product pages, and a streamlined checkout process. Advanced features include real-time inventory management, personalized recommendations, and integrated payment processing. The backend is powered by robust APIs that ensure fast loading times and secure transactions."
+        image="/placeholder.svg?height=500&width=400"
+        imagePosition="right"
+        delay={100}
       />
 
-      <section className="py-16">
-        <div className="container-custom">
-          {/* This is a placeholder for web development projects */}
-          <div className="grid grid-cols-1 gap-8">
-            <div className="aspect-video relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Web Development Project"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="aspect-video relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Web Development Project"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="aspect-video relative rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Web Development Project"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectShowcase
+        title="CORPORATE DASHBOARD"
+        description="An enterprise-grade dashboard application designed to provide comprehensive business insights at a glance. This sophisticated web application features real-time data visualization, interactive charts, and customizable widgets that allow users to monitor key performance indicators effectively. The clean, professional interface prioritizes usability while maintaining the flexibility to handle complex data sets. Built with scalability in mind, the platform can accommodate growing businesses and evolving data requirements. Advanced filtering and reporting capabilities empower decision-makers with the tools they need to drive business success."
+        image="/placeholder.svg?height=500&width=400"
+        imagePosition="left"
+        delay={200}
+      />
+
+      <ProjectShowcase
+        title="SAAS PLATFORM"
+        description="A cutting-edge Software as a Service platform that demonstrates our expertise in building scalable, cloud-based applications. This comprehensive solution features user authentication, subscription management, and a modular architecture that supports multiple service tiers. The responsive design ensures consistent functionality across all devices, while the intuitive user interface makes complex features accessible to users of all technical levels. Advanced security measures protect user data, and the platform's API-first approach enables seamless integrations with third-party services."
+        image="/placeholder.svg?height=500&width=400"
+        imagePosition="right"
+        delay={300}
+      />
+
+      <ProjectShowcase
+        title="PORTFOLIO SHOWCASE"
+        description="A stunning portfolio website that showcases creative work through an immersive digital experience. This project demonstrates our ability to balance aesthetic appeal with functional design, creating a platform that not only looks beautiful but also effectively communicates the artist's vision and capabilities. The site features smooth animations, optimized image galleries, and an intuitive navigation system that guides visitors through the creative journey. Performance optimization ensures fast loading times, while SEO best practices help the portfolio reach its intended audience."
+        image="/placeholder.svg?height=500&width=400"
+        imagePosition="left"
+        delay={400}
+      />
+
+      <ProjectShowcase
+        title="PROGRESSIVE WEB APP"
+        description="A progressive web application designed with mobile users as the primary focus. This project showcases our expertise in creating responsive, touch-friendly interfaces that provide native app-like experiences through web browsers. The application features offline functionality, push notifications, and optimized performance for mobile networks. The design prioritizes thumb-friendly navigation and clear visual hierarchy, ensuring excellent usability on smaller screens while scaling beautifully to larger displays."
+        image="/placeholder.svg?height=500&width=400"
+        imagePosition="right"
+        delay={500}
+      />
     </>
   )
 }

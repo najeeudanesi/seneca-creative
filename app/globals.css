@@ -136,7 +136,7 @@ body {
   }
 
   .hero-section {
-    @apply relative py-20 md:py-32 text-white h-[30rem] md:h-[45rem] bg-cover bg-center;
+    @apply relative py-20 md:py-32 text-white h-screen bg-cover bg-center;
   }
 
   .hero-overlay {
@@ -144,6 +144,6 @@ body {
   }
 
   .hero-content {
-    @apply relative z-10 container-custom bottom-24 h-full;
+    @apply relative z-10 container-custom bottom-10 h-full;
   }
 }

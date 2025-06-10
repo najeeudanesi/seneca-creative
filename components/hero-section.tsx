@@ -30,7 +30,7 @@ export default function HeroSection({
       }}
     >
       <div className="hero-overlay"></div>
-      <div className="hero-content h-screen flex items-center  text-white mt-16 w-full"> 
+      <div className="hero-content h-full flex items-center  text-white mt-16 w-full"> 
         <AnimatedSection animation="fade-up" className="w-full">
           <h1 className="section-title">{title}</h1>
           {subtitle && <p className="section-subtitle">{subtitle}</p>}

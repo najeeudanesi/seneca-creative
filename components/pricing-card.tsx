@@ -11,7 +11,7 @@ interface PricingCardProps {
 export default function PricingCard({ title, subtitle, price, isPopular = false, features }: PricingCardProps) {
   return (
     <div
-      className={`flex flex-col h-full ${isPopular ? "bg-[#8B4513]" : "bg-[#FF6B00]"} text-white rounded-none relative overflow-hidden`}
+      className={`flex flex-col h-full ${isPopular ? "bg-[#8B4513]" : "bg-[#FF6B00]"} text-white rounded-md relative overflow-hidden`}
     >
       {isPopular && (
         <div className="absolute top-0 right-0 bg-white text-[#8B4513] text-xs font-bold py-1 px-3 rounded-bl-lg">

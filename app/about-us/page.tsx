@@ -137,11 +137,12 @@ export default function AboutUs() {
         </div>
       </AnimatedSection>
 
-      <QuoteSection
-        quote="Luck is when preparation meets opportunity"
-        author="Seneca"
-        backgroundImage="/placeholder.svg?height=400&width=1200"
-      />
+   
+         <QuoteSection
+               quote="Luck is when preparation meets opportunity"
+               author="Seneca"
+               backgroundImage="https://i.ibb.co/Vppj0PgR/Philosophy-stuff.png"
+             />
     </>
   )
 }
