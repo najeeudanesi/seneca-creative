@@ -19,9 +19,9 @@ export default function Navbar() {
 
   return (
     <header className="bg-black text-white py-4 sticky top-0 z-50">
-      <div className="container-custom h-16 flex justify-between items-center">
+      <div className="container-custom h-12 md:16 flex justify-between items-center">
         <Link href="/" className="flex items-center top-1">
-          <div className="h-24 w-24">
+          <div className="h-16 w-16 md:h-20 md:w-20">
             <Image
               src={senecaCreativeLogo}
               alt="Seneca Creative"
