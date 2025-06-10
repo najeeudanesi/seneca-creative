@@ -144,6 +144,6 @@ body {
   }
 
   .hero-content {
-    @apply relative z-10 container-custom bottom-1 h-full;
+    @apply relative z-10 container-custom bottom-24 h-full;
   }
 }

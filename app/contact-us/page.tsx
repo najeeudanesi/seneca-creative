@@ -5,7 +5,7 @@ import ContactInfo from "@/components/contact-info"
 export default function ContactUs() {
   return (
     <>
-      <HeroSection
+      {/* <HeroSection
         title="Contact Us"
         subtitle="Speak too our Experts"
         backgroundImage="/placeholder.svg?height=600&width=1200"
@@ -13,7 +13,7 @@ export default function ContactUs() {
         primaryButtonLink="/contact-us"
         secondaryButtonText="Pricing"
         secondaryButtonLink="/pricing"
-      />
+      /> */}
 
       <section className="py-16">
         <div className="container-custom">
@@ -24,7 +24,7 @@ export default function ContactUs() {
             <ContactInfo email="Seneca-creative@gmail.com" phone="000-000-000-0989" />
             <div>
               <Image
-                src="/placeholder.svg?height=300&width=500"
+              src="https://i.ibb.co/3yhm2Hdc/freepik-a-powerful-beam-projects-an-orange-senecacreative-62277.png"
                 alt="Contact Seneca Creative"
                 width={500}
                 height={300}

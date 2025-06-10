@@ -116,7 +116,7 @@ export default function Home() {
           title="3D Models and Visuals"
           category="3D VISUALS"
           description="View our gallery of 3d models and visuals"
-          image="/placeholder.svg?height=300&width=300"
+          image="https://i.ibb.co/FLftStQn/image6.png"
           link="/gallery/3d-visuals"
         />
       </AnimatedSection>
@@ -125,7 +125,7 @@ export default function Home() {
           title="Web Solutions and Development"
           category="WEB & APP DEVELOPMENT"
           description="View our web solutions and development process"
-          image="/placeholder.svg?height=300&width=300"
+          image="https://i.ibb.co/BH9TmzkW/image-2.png"
           link="/gallery/web-development"
         />
       </AnimatedSection>
@@ -134,7 +134,7 @@ export default function Home() {
           title="Architectural Designs"
           category="ARCHITECTURE"
           description="View Examples of our Architectural Designs"
-          image="/placeholder.svg?height=300&width=300"
+          image="https://i.ibb.co/21gxrkQ1/image.png"
           link="/gallery/architecture"
         />
       </AnimatedSection>
