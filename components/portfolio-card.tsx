@@ -28,8 +28,9 @@ export default function PortfolioCard({ title, category, description, image, lin
       {/* <h4 className="text-lg font-medium mb-2">{title}</h4> */}
       <p className="text-sm text-gray-600">{description}</p>
 
-     <button style={{height: "42px"}} className="opacity-0 mt-4 text-white rounded-lg btn-primary transition-opacity duration-300 group-hover:opacity-100">
-  View
+     <button style={{height: "42px"}} className="opacity-0 mt-4 text-white rounded-lg btn-primary transition-opacity duration-300 group-hover:opacity-100 text-center w-full ">
+
+  <p className="w-full">View Gallery</p>
 </button>
 
     </div>
