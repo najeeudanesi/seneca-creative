@@ -1,6 +1,7 @@
 import Image from "next/image"
 import HeroSection from "@/components/hero-section"
 import ContactInfo from "@/components/contact-info"
+import AnimatedSection from "@/components/animated-section"
 
 export default function ContactUs() {
   return (
@@ -21,15 +22,17 @@ export default function ContactUs() {
           <p className="text-center text-gray-600 mb-10">Reach Out to Us</p>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ContactInfo email="Seneca-creative@gmail.com" phone="000-000-000-0989" />
+            <ContactInfo email="connect.seneca@gmail.com" phone="000-000-000-0989" />
             <div>
-              <Image
-              src="https://i.ibb.co/3yhm2Hdc/freepik-a-powerful-beam-projects-an-orange-senecacreative-62277.png"
-                alt="Contact Seneca Creative"
-                width={500}
-                height={300}
-                className="rounded-lg"
-              />
+              <AnimatedSection animation="slide-in-right" delay={200}>
+                          <img
+                            src="https://i.ibb.co/3yhm2Hdc/freepik-a-powerful-beam-projects-an-orange-senecacreative-62277.png"
+                            alt="Contact Seneca Creative"
+                            width={550}
+                            height={300}
+                            className="rounded-lg"
+                          />
+                        </AnimatedSection>
             </div>
           </div>
         </div>

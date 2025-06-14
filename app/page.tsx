@@ -224,7 +224,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-24 items-center">
             <AnimatedSection animation="slide-in-left">
-              <ContactInfo email="Seneca-creative@gmail.com" phone="000-000-000-0989" />
+              <ContactInfo email="connect.seneca@gmail.com" phone="000-000-000-0989" />
             </AnimatedSection>
             <AnimatedSection animation="slide-in-right" delay={200}>
               <img
