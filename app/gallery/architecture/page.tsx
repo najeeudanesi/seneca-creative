@@ -24,40 +24,12 @@ export default function ArchitectureGallery() {
 
       <section className="py-16">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.slice(0, 3).map((img, i) => (
-              <div className="aspect-square relative" key={i}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((img, i) => (
+              <div className="aspect-square relative rounded overflow-hidden" key={i}>
                 <Image src={img.src} alt={img.alt} fill className="object-cover" />
               </div>
             ))}
-            <div className="md:col-span-2 aspect-video relative">
-              <Image src={galleryImages[3].src} alt={galleryImages[3].alt} fill className="object-cover" />
-            </div>
-            {galleryImages.slice(4, 6).map((img, i) => (
-              <div className="aspect-square relative" key={i + 4}>
-                <Image src={img.src} alt={img.alt} fill className="object-cover" />
-              </div>
-            ))}
-            <div className="md:col-span-2 aspect-video relative">
-              <Image src={galleryImages[6].src} alt={galleryImages[6].alt} fill className="object-cover" />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-            {galleryImages.slice(7, 9).map((img, i) => (
-              <div className="aspect-square relative" key={i + 7}>
-                <Image src={img.src} alt={img.alt} fill className="object-cover" />
-              </div>
-            ))}
-            <div className="aspect-square relative">
-              <Image src={galleryImages[9].src} alt={galleryImages[9].alt} fill className="object-cover" />
-            </div>
-            <div className="md:col-span-2 aspect-video relative">
-              <Image src={galleryImages[10].src} alt={galleryImages[10].alt} fill className="object-cover" />
-            </div>
-            <div className="aspect-square relative">
-              <Image src={galleryImages[11].src} alt={galleryImages[11].alt} fill className="object-cover" />
-            </div>
           </div>
         </div>
       </section>
