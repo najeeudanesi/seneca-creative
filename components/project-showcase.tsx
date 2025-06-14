@@ -42,7 +42,7 @@ export default function ProjectShowcase({
         src={image || "/placeholder.svg"}
         alt={title}
         fill
-        className="object-cover"
+        className="object-cover rounded-md hover:scale-105 transition-transform duration-300"
       />
     </div>
   </div>

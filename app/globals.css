@@ -99,7 +99,7 @@ body {
   }
 
   .btn-primary {
-    @apply text-white text-center py-3 text-sm px-4 rounded-md transition-all duration-300 font-thin h-14 flex flex-col justify-center align-middle  hover:shadow-lg transform hover:-translate-y-0.5 hover:opacity-80 md:w-28 w-28;
+    @apply text-white text-center py-3 text-sm  rounded-md transition-all duration-300 font-thin h-14 flex flex-col justify-center align-middle  hover:shadow-lg transform hover:-translate-y-0.5 hover:opacity-80 md:w-28 w-28;
     background: linear-gradient(
       126deg,
       #e05e00 22.4%,
